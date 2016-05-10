@@ -1,0 +1,30 @@
+<div class="container">
+
+  <!-- <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div> -->
+
+  <div class="jumbotron text-center">
+    <p class="lead">
+      <img src="assets/images/credomatic_logo.png" alt="Logo credomatic" />
+    </p>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4" ng-repeat="servicios in main.servicios | orderBy:'rank'">
+        <a href="#">
+          <div class="thumbnail">
+            <div class="row">
+              <img class="pull-right" ng-src="assets/images/{{ servicios.name }}" alt="logo">
+            </div>
+            <div class="caption">
+              <h3>{{ servicios.text }}</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
